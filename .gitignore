@@ -1,0 +1,61 @@
+# .gitignore for the Bharatnatyam Mudra Recognizer project
+
+# --- Virtual Environment ---
+# Never commit the virtual environment folder. It's machine-specific and can be rebuilt from requirements.txt.
+venv/
+.venv/
+env/
+.env
+
+# --- Python Cache & Compiled Files ---
+# These are generated automatically by Python and don't need to be tracked.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Dataset ---
+# Ignore the training dataset folder. It is very large and should be cloned
+# separately by anyone setting up the project, as per README.md instructions.
+Bharatanatyam-Mudra-Dataset-master/
+
+# --- IDE / Editor Specific Files ---
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+
+# JetBrains PyCharm
+.idea/
+
+# --- Operating System Specific Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Build and Distribution Artifacts ---
+# In case you decide to build a package from this project later.
+build/
+dist/
+*.egg-info/
+/downloads/
+/site/
+
+# --- Logs and Temporary Files ---
+*.log
+*.log.*
+*.tmp
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints
+
+model_artifacts/
